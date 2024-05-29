@@ -22,12 +22,13 @@ public class StoryModel : MonoBehaviour
     public string storyText;
 
     public Option[] option;    //선택지 배열
+    internal readonly object options;
 
     [System.Serializable]
 
     public class Option
     {
-        public string optionText;
+        public string optionsText;
         public string buttonText;    //선택지 버튼의 이름
 
         public EventCheck eventCheck;
